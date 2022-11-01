@@ -1,0 +1,53 @@
+.navbar {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  background: #0072b9;
+}
+.toggleButton {
+  /* border: 1px solid; */
+  cursor: pointer;
+  height: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toggleButton svg {
+  position: fixed;
+  right: 1.1rem;
+  font-size: 2.7rem;
+}
+.toggleButton h2,
+.toggleButton svg,
+#open .mobileNav div a {
+  color: #f9f9f9;
+}
+.toggleButton h2 {
+  margin-left: 2rem;
+}
+#open .mobileNav {
+  height: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#open .mobileNav div {
+  width: 100%;
+  /* border: 1px solid; */
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#open .mobileNav div a {
+  text-decoration: none;
+  font-size: 1.2rem;
+
+  font-weight: bolder;
+}
+
+#close .mobileNav {
+  display: none;
+}
