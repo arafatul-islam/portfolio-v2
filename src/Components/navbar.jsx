@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Reorder } from "@material-ui/icons";
 
-
 // import css
 import "../Styles/common.css";
 import css from "../Styles/navbar.module.css";
@@ -25,15 +24,15 @@ const NavbarComp = () => {
           <Reorder />
         </div>
         <div className={css.mobileNav}>
-          <div>
+          <div id={css["div1"]}>
             <Link to="/">Home</Link>
             <Link to="about">About</Link>
             <Link to="projects">Projects</Link>
           </div>
-          <div>
+          <div id={css["div2"]}>
             <Link to="career">Career</Link>
             <Link to="skills">Skills</Link>
-            <Link to="contact">Contact Me</Link>
+            <Link to="contact">Contact</Link>
           </div>
         </div>
       </nav>

@@ -3,6 +3,7 @@
   bottom: 0;
   width: 100vw;
   background: #0072b9;
+  font-family: "Poppins", sans-serif;
 }
 .toggleButton {
   /* border: 1px solid; */
@@ -21,7 +22,8 @@
 }
 .toggleButton h2,
 .toggleButton svg,
-#open .mobileNav div a {
+#open .mobileNav div a,
+#close .mobileNav div a {
   color: #f9f9f9;
 }
 .toggleButton h2 {
@@ -50,4 +52,55 @@
 
 #close .mobileNav {
   display: none;
+}
+
+@media screen and (min-width: 40em) {
+  .navbar {
+    top: 0;
+    height: 3.7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .toggleButton {
+    /* border: 1px solid white; */
+    flex: 1;
+  }
+  .toggleButton svg {
+    display: none;
+  }
+  #close .mobileNav {
+    /* border: 1px solid white; */
+    flex: 2;
+    display: flex;
+    /* padding: 0 2rem; */
+  }
+  #close .mobileNav div {
+    /* border: 7px solid red; */
+    flex: 1;
+  }
+  #close .mobileNav #div1 {
+    display: flex;
+    justify-content: end;
+    /* border: 1px solid red; */
+  }
+  #close .mobileNav #div2 {
+    display: flex;
+    justify-content: start;
+  }
+  #close .mobileNav div a {
+    padding: 0 2rem;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border: transparent;
+    /* transition: color 800ms ease-in; */
+    padding: 0.5rem 0.7rem;
+  }
+
+  #close .mobileNav div a:hover {
+    color: #ddd;
+    /* border: 1px solid white ; */
+    /* font-weight: 600; */
+  }
 }
